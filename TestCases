@@ -1,0 +1,53 @@
+Test Cases			
+			
+1	Login to the application as standard_user		
+2	Login to the application as problem_user		
+3	Login to the application as locked_out_user		
+4	Login to the application as performance_glitch_user		
+5	Login to the application as invalid user.		
+			
+			
+Pre-conditions: user should be on the login portal.			
+			
+			
+TC 1			
+Test Title: Verify login as standard_user		
+	
+Step 	Test Steps                                         Expected Result							Actual Result
+1	Navigate to login page		
+2	Login as standard_user		
+3	Validate the application is working fine.   	App should respond fine and all the images should be loaded"	 As expected
+			
+			
+TC 2:			
+Test Title: Verify login as problem_user	
+		
+Step    Test Steps  				Expected Result		Actual Result
+1	Navigate to login page		
+2	Login as problem_user		
+3	Validate that images do not load and app.	Images should not load	As expected
+			
+			
+TC 3:			
+Test Title: Verify login with locked_out user		
+	
+Step   	Test Steps   			   Expected Result	                        Actual Result
+1	Navigate to login page		
+2	Login as locked_out user.		   User should see Locked out error message	As expected.
+3	Validate the locked out error message		
+			
+TC 4:			
+Test Title: Verify login with performance_glitch_user	
+		
+Step   Test Steps                          	Expected Result				Actual Result
+1	Navigate to login page		
+2	Login as performance_glitch_user		
+3	Validate the app is performing slowly	Application should respond slowly.	As expected.
+			
+TC 5:			
+Test Title: Verify login with invalid credentials.	
+		
+Step   	Test Steps	                Expected Result				Actual Result
+1	Navigate to login page                       		
+2	Enter Invalid credentials		
+3	Validate the error message.	Error message should be thrown.   	As expected
