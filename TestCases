@@ -1,0 +1,56 @@
+Test Cases			
+			
+Positive scenarios
+1	Signin to the given app with StandardUser		
+2	Signin to the given app with problem_user		
+3	Signin to the given app with locked_out_user		
+4	Signin to the given app with performance_glitch_user		
+Negative Scenario
+5	Signin to the given app with invalid user.		
+			
+			
+Pre-conditions: user should be able to navigate to the login portal.			
+			
+			
+TC 1			
+Test Title: Verify Signin to the given app with StandardUser		
+	
+Step 	Test Steps                                        	 Expected Result						Actual Result
+1	Navigate to given given login page		
+2	Signin as standard_user		
+3	Validate that the user is navigated to the homepage.   	Application should load fine with all data			As expected
+			
+			
+TC 2:			
+Test Title: Verify Signin to the given app with problem_user	
+		
+Step    Test Steps  						Expected Result			Actual Result
+1	Navigate to given login page		
+2	Signin as problem_user		
+3	Validate that the user is navigated to the homepage.	user should land on HomePage	As expected
+4. 	But the Images should not load				Images should not load		As expected
+			
+TC 3:			
+Test Title: Verify Signin to the given app with locked_out_user	
+	
+Step   	Test Steps   			   				Expected Result	                        	Actual Result
+1	Navigate to given login page		
+2	Signin as locked_out user.		   			User should see Locked out error message	As expected.
+3	Validate the locked out error message		
+4	Validate that the user is  not navigated to the homepage.	user should land on HomePage			As expected
+			
+TC 4:			
+Test Title: Verify Signin to the given app with performance_glitch_user
+		
+Step   Test Steps                          		Expected Result				Actual Result
+1	Navigate to given login page		
+2	Signin as performance_glitch_user		
+3	Validate the application is loading slowly	Application should respond slowly.	As expected.
+			
+TC 5:			
+Test Title: Verify Signin to the given app with invalid user.	
+		
+Step   	Test Steps	                Expected Result				Actual Result
+1	Navigate to given login page                       		
+2	Enter Invalid credentials		
+3	Validate the error message.	Error message should be thrown.   	As expected
